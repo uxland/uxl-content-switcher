@@ -1,0 +1,153 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1536071108922' stop='1536071109109'>
+    <name>uxl-content-switcher Given we want a content switcher When we use component with a children divs And when we set selected as a index, without attrForSelected</name>
+    <title>uxl-content-switcher Given we want a content switcher When we use component with a children divs And when we set selected as a index, without attrForSelected</title>
+    <test-cases>
+        <test-case start='1536071108923' status='passed' stop='1536071109098'>
+            <name>Then the component should select de child according the selected attribute</name>
+            <title>Then the component should select de child according the selected attribute</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536071108926' status='passed' stop='1536071108952'>
+                    <name>POST /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/elements</name>
+                    <title>POST /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='0c55726c-92ad-4eed-9d3a-0522c842343a-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='88d63ecb-9567-479b-96dd-942cb57921dc-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071108952' status='passed' stop='1536071108987'>
+                    <name>GET /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/element/0.9810957589953366-2/displayed</name>
+                    <title>GET /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/element/0.9810957589953366-2/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='36ccd786-0bf4-4444-9559-b7b765b6d5a9-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071108990' status='passed' stop='1536071109013'>
+                    <name>POST /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/elements</name>
+                    <title>POST /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='afa40dc8-096e-4c3f-9f7b-002a608ff941-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='66e31e04-ee5d-434e-8586-d0b25cc64a66-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071109013' status='passed' stop='1536071109037'>
+                    <name>GET /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/element/0.9810957589953366-3/displayed</name>
+                    <title>GET /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/element/0.9810957589953366-3/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='c8e8194f-697b-424f-9ec2-dcc749c9d2d0-attachment.json' type='application/json' size='92'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071109038' status='passed' stop='1536071109064'>
+                    <name>POST /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/elements</name>
+                    <title>POST /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='eeb2eadc-3112-41a6-95b6-9af8c21089ea-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='9cdabe8f-1d57-4b1d-840d-8a2c7307db7e-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071109064' status='passed' stop='1536071109095'>
+                    <name>GET /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/element/0.9810957589953366-4/displayed</name>
+                    <title>GET /wd/hub/session/104b3e136049d8cd7c22ba80cd490a86/element/0.9810957589953366-4/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='d116b4e3-f209-40e8-b037-2d6ff9f5d36e-attachment.json' type='application/json' size='92'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1536071109099' status='failed' stop='1536071109105'>
+            <name>And selected children should have "selected" classifier</name>
+            <title>And selected children should have "selected" classifier</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected true to be false</message>
+                <stack-trace>AssertionError: expected true to be false
+                    at Context.it (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\test\e2e\uxl-content-switcher.spec.js:21:39)
+                    at C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1536071109105' status='failed' stop='1536071109106'>
+            <name>And the rest of childs shouldn't have "selected" classifier</name>
+            <title>And the rest of childs shouldn't have "selected" classifier</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected true to be false</message>
+                <stack-trace>AssertionError: expected true to be false
+                    at Context.it (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\test\e2e\uxl-content-switcher.spec.js:24:39)
+                    at C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1536071109106' status='failed' stop='1536071109107'>
+            <name>And the rest of childs shouldn't display</name>
+            <title>And the rest of childs shouldn't display</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected true to be false</message>
+                <stack-trace>AssertionError: expected true to be false
+                    at Context.it (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\test\e2e\uxl-content-switcher.spec.js:27:39)
+                    at C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1536137108948' stop='1536137114507'>
+    <name>uxl-content-switcher Given we want a content switcher When we use component with a children divs</name>
+    <title>uxl-content-switcher Given we want a content switcher When we use component with a children divs</title>
+    <test-cases>
+        <test-case start='1536137108948' status='broken' stop='1536137114507'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1536137108964' status='passed' stop='1536137110195'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/url</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/url</title>
+                    <attachments>
+                        <attachment title='Request' source='55205010-f0c7-41f1-be5f-82f16e45f34e-attachment.json' type='application/json' size='83'/>
+                        <attachment title='Response' source='2ba998da-6941-4aa9-b420-aa814fa1c7b0-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137110199' status='passed' stop='1536137110231'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='049c0601-5811-4574-b5e9-54c0e3bdab26-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='d8ad9daf-bad0-439a-b557-87cb563e855f-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137110700' status='passed' stop='1536137110700'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='fd18d9d2-1666-4d03-8a55-b425773c43f7-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='58e4f239-9ec9-487e-9497-87ff7b310fba-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137111209' status='passed' stop='1536137111217'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='7ef8be74-5be5-4c14-82fc-c66ece28f708-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='5fc01615-c1d7-437e-825c-394da3edc865-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137111699' status='passed' stop='1536137111715'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='1ab77f9f-f32c-48b8-a6aa-5ddea8c790ce-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='22c76cf4-75f7-432c-b81b-875a6200cd0d-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137112199' status='passed' stop='1536137112211'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='362f2547-e7e8-4325-ae53-731995454367-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='20e968bf-7358-4754-9705-f969f0133305-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137112709' status='passed' stop='1536137112725'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='e27aea24-ad10-4835-b295-30452733a924-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='11b93cd0-d5fa-41eb-a0d2-c759b49b3951-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137113209' status='passed' stop='1536137113224'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='b251fada-054c-40fe-8899-01351cd7e6b4-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='cbb55c70-af4a-43f8-876a-b2fdfbdc6022-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137113714' status='passed' stop='1536137113714'>
+                    <name>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</name>
+                    <title>POST /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='baeb4a4f-3aa9-4a15-9d07-f037229b2eaf-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='439f7afa-1611-4167-a1be-3de888146f0b-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536137114214' status='broken' stop='1536137114507'>
+                    <name>GET /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/screenshot</name>
+                    <title>GET /wd/hub/session/e38779e5aa2c9e11b4f136f550adf17d/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='6fdd14db-d0e9-4647-87a7-a5bebf6f81f1-attachment.png' type='image/png' size='28206'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element ("#test1") still not existing after 4000ms</message>
+                <stack-trace>Error: element ("#test1") still not existing after 4000ms
+                    at elements("#test1") - C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\webdriverio\build\lib\commands\isExisting.js:46:17
+                    at isExisting("#test1") - C:\Users\Daniel\Documents\Bitbucked repository\uxl-content-switcher\node_modules\webdriverio\build\lib\commands\waitForExist.js:67:22</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,177 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1536071895141' stop='1536071895689'>
+    <name>uxl-content-switcher Given we want a content switcher When we use component with a children divs And when we set selected as a index, without attrForSelected</name>
+    <title>uxl-content-switcher Given we want a content switcher When we use component with a children divs And when we set selected as a index, without attrForSelected</title>
+    <test-cases>
+        <test-case start='1536071895141' status='passed' stop='1536071895205'>
+            <name>Then the component should show de child according the selected attribute</name>
+            <title>Then the component should show de child according the selected attribute</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536071895143' status='passed' stop='1536071895167'>
+                    <name>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</name>
+                    <title>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='247d14f8-1a22-4a41-97de-9ba7f44d72ac-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='9ddfefed-1457-43f2-a9ca-f8e193728c85-attachment.json' type='application/json' size='162'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895167' status='passed' stop='1536071895203'>
+                    <name>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-2/displayed</name>
+                    <title>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-2/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='9915e062-8152-4b25-bd49-ff59da76c08f-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1536071895207' status='passed' stop='1536071895481'>
+            <name>And the rest of childs shouldn't display</name>
+            <title>And the rest of childs shouldn't display</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536071895210' status='passed' stop='1536071895275'>
+                    <name>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</name>
+                    <title>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='2b353397-10d7-417b-8a14-62f898bc0906-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='511a86d2-dc71-4d1c-aadb-41bb89a682cb-attachment.json' type='application/json' size='162'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895276' status='passed' stop='1536071895311'>
+                    <name>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-3/displayed</name>
+                    <title>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-3/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='9e63c513-4ddd-4d17-9d45-db7293178c26-attachment.json' type='application/json' size='92'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895316' status='passed' stop='1536071895427'>
+                    <name>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</name>
+                    <title>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='85ec7703-484d-4ef2-8e5e-9fa4136ac217-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='13fa491b-453e-494f-a414-5c705363f448-attachment.json' type='application/json' size='162'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895427' status='passed' stop='1536071895480'>
+                    <name>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-4/displayed</name>
+                    <title>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-4/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='2d484c7e-2233-4eb5-ab58-951b413ecb2e-attachment.json' type='application/json' size='92'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1536071895485' status='passed' stop='1536071895543'>
+            <name>And selected children should have "selected" classifier</name>
+            <title>And selected children should have "selected" classifier</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536071895485' status='passed' stop='1536071895507'>
+                    <name>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</name>
+                    <title>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='decf8e14-fc14-4053-94b5-a3bdf9a4c868-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='38780d9d-068a-4e2f-98d9-c15e2b5d321c-attachment.json' type='application/json' size='162'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895507' status='passed' stop='1536071895542'>
+                    <name>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-2/attribute/class</name>
+                    <title>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-2/attribute/class</title>
+                    <attachments>
+                        <attachment title='Response' source='06b85ecb-15ea-4edf-b53f-1c56f6fd669c-attachment.json' type='application/json' size='97'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1536071895544' status='passed' stop='1536071895686'>
+            <name>And the rest of childs shouldn't have "selected" classifier</name>
+            <title>And the rest of childs shouldn't have "selected" classifier</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Users\\Daniel\\Documents\\Bitbucked repository\\uxl-content-switcher\\test\\e2e\\uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536071895545' status='passed' stop='1536071895611'>
+                    <name>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</name>
+                    <title>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='5746e990-e225-4ed0-93cb-c772a76e4d1f-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='3b8e9993-9d22-45ac-b79e-2c647ee9f481-attachment.json' type='application/json' size='162'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895611' status='passed' stop='1536071895647'>
+                    <name>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-3/attribute/class</name>
+                    <title>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-3/attribute/class</title>
+                    <attachments>
+                        <attachment title='Response' source='2ec39bb4-26d8-427e-ae71-70d27c48af91-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895648' status='passed' stop='1536071895673'>
+                    <name>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</name>
+                    <title>POST /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='e6fd6182-7cf6-4a01-86c7-c0f6f3742cff-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='e1617720-02d2-4ac5-9e77-92e31b39863f-attachment.json' type='application/json' size='162'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071895673' status='passed' stop='1536071895685'>
+                    <name>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-4/attribute/class</name>
+                    <title>GET /wd/hub/session/fa0ddfafec4d518bb9624e440bd93fac/element/0.005691691321860093-4/attribute/class</title>
+                    <attachments>
+                        <attachment title='Response' source='be5ae247-c58e-4ea8-8c7f-03c0c494471b-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1536071436086' stop='1536071437299'>
+    <name>uxl-content-switcher Given we want a content switcher When we use component with a children divs</name>
+    <title>uxl-content-switcher Given we want a content switcher When we use component with a children divs</title>
+    <test-cases>
+        <test-case start='1536071436086' status='passed' stop='1536071436893'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1536071436090' status='passed' stop='1536071436855'>
+                    <name>POST /wd/hub/session/ac50021c606717e9635afc5cd9eca7ca/url</name>
+                    <title>POST /wd/hub/session/ac50021c606717e9635afc5cd9eca7ca/url</title>
+                    <attachments>
+                        <attachment title='Request' source='910d13ea-87eb-4e34-af4c-307a3e8b00d5-attachment.json' type='application/json' size='83'/>
+                        <attachment title='Response' source='8435dbfb-83fb-4ce0-91b4-960e8ac75cf1-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536071436862' status='passed' stop='1536071436891'>
+                    <name>POST /wd/hub/session/ac50021c606717e9635afc5cd9eca7ca/elements</name>
+                    <title>POST /wd/hub/session/ac50021c606717e9635afc5cd9eca7ca/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='ac1d71db-cf44-4e2b-aa98-625f0e4d6acb-attachment.json' type='application/json' size='43'/>
+                        <attachment title='Response' source='dda3063b-43d3-4842-a8b8-fb9aa80c850e-attachment.json' type='application/json' size='161'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
