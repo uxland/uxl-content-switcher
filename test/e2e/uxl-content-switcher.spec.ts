@@ -7,7 +7,7 @@ describe('uxl-content-switcher', ()=>{
         describe('When we use component with a children divs', ()=>{
             before(()=>{
                 browser.url('');
-                browser.waitForExist('#test1', 4000);
+                browser.waitForExist('#test1', 5000);
             });
             describe('And when we set selected as a index, without attrForSelected', ()=>{
                 it('Then the component should show de child according the selected attribute', ()=>{
