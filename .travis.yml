@@ -13,7 +13,7 @@ before_script:
   - npm i -g polymer-cli
 script:
   - npm run build
-  - xvfb-run npm run test:ui
+  - xvfb-run npm run test:e2e
   # - npm run test:unit
 after_success:
   - gulp dist
@@ -25,4 +25,3 @@ deploy:
   skip_cleanup: true
   script:
     - npx semantic-release
-

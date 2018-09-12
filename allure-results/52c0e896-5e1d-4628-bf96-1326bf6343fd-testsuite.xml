@@ -1,0 +1,177 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1536754851943' stop='1536754852445'>
+    <name>uxl-content-switcher Given we want a content switcher When we use component with a children divs And when we set selected as a index, without attrForSelected</name>
+    <title>uxl-content-switcher Given we want a content switcher When we use component with a children divs And when we set selected as a index, without attrForSelected</title>
+    <test-cases>
+        <test-case start='1536754851943' status='passed' stop='1536754852047'>
+            <name>Then the component should show de child according the selected attribute</name>
+            <title>Then the component should show de child according the selected attribute</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/alexvizcaino/Documents/uxland/libs/uxl-content-switcher/test/e2e/uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536754851965' status='passed' stop='1536754852008'>
+                    <name>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</name>
+                    <title>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='503c1095-cc73-426a-96d0-94d3d9e20f1a-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='9335bde4-1c83-4152-94a2-20aadc409a62-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852009' status='passed' stop='1536754852041'>
+                    <name>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-2/displayed</name>
+                    <title>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-2/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='947e345f-7ff0-45d9-8430-dd28b9e393c6-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1536754852048' status='passed' stop='1536754852263'>
+            <name>And the rest of childs shouldn't display</name>
+            <title>And the rest of childs shouldn't display</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/alexvizcaino/Documents/uxland/libs/uxl-content-switcher/test/e2e/uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536754852050' status='passed' stop='1536754852110'>
+                    <name>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</name>
+                    <title>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='486aa189-86c9-430d-aae8-65f82475acd7-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='d3b1429b-fd00-47f7-afb6-4dec9fafff91-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852110' status='passed' stop='1536754852160'>
+                    <name>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-3/displayed</name>
+                    <title>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-3/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='d8fe36c8-0b4d-4bd2-8822-7b60aa37d0cd-attachment.json' type='application/json' size='92'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852163' status='passed' stop='1536754852232'>
+                    <name>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</name>
+                    <title>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='0cef2815-cd3a-45cc-b5c0-e62568705c0f-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='fbec7464-efe9-467a-a68a-324dc464b9ec-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852232' status='passed' stop='1536754852260'>
+                    <name>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-4/displayed</name>
+                    <title>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-4/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='f0307263-3744-410b-962d-c5b9110eed7a-attachment.json' type='application/json' size='92'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1536754852264' status='passed' stop='1536754852339'>
+            <name>And selected children should have "selected" classifier</name>
+            <title>And selected children should have "selected" classifier</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/alexvizcaino/Documents/uxland/libs/uxl-content-switcher/test/e2e/uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536754852266' status='passed' stop='1536754852298'>
+                    <name>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</name>
+                    <title>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='ca034ab3-4d02-4956-bb50-6de7410e8517-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='80a193b8-7f15-47a8-a3e9-7d9a51a1a6a1-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852300' status='passed' stop='1536754852331'>
+                    <name>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-2/attribute/class</name>
+                    <title>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-2/attribute/class</title>
+                    <attachments>
+                        <attachment title='Response' source='433230e7-cf35-4b5c-ae04-b7f5bb4b7e6d-attachment.json' type='application/json' size='97'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1536754852341' status='passed' stop='1536754852444'>
+            <name>And the rest of childs shouldn't have "selected" classifier</name>
+            <title>And the rest of childs shouldn't have "selected" classifier</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/alexvizcaino/Documents/uxland/libs/uxl-content-switcher/test/e2e/uxl-content-switcher.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1536754852346' status='passed' stop='1536754852369'>
+                    <name>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</name>
+                    <title>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='8c31c04f-2520-4b38-b63d-2802d198bd60-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='3594f51a-39db-45c6-9cb5-09ee50ab4448-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852371' status='passed' stop='1536754852392'>
+                    <name>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-3/attribute/class</name>
+                    <title>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-3/attribute/class</title>
+                    <attachments>
+                        <attachment title='Response' source='343c835c-73ff-404c-a529-f5dfa2f72736-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852396' status='passed' stop='1536754852427'>
+                    <name>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</name>
+                    <title>POST /wd/hub/session/750f7966635c6658fee403c33a9ac894/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='6edb3d21-8751-4a98-924c-6381b2ff716b-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='50b98fba-dafb-49b7-9c0e-4760c8f658b7-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1536754852429' status='passed' stop='1536754852442'>
+                    <name>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-4/attribute/class</name>
+                    <title>GET /wd/hub/session/750f7966635c6658fee403c33a9ac894/element/0.8315033978555495-4/attribute/class</title>
+                    <attachments>
+                        <attachment title='Response' source='f09e2670-109a-49cc-8472-f28485ea1389-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
