@@ -1,4 +1,4 @@
 import {html} from '@polymer/lit-element/lit-element';
 import {TemplateResult} from 'lit-html';
-const innerTemplate = (props) => html`<slot></slot>`;
-export const template: (props: any) =>TemplateResult = innerTemplate
+const innerTemplate = () => html`<slot></slot>`;
+export const template: () =>TemplateResult = innerTemplate;

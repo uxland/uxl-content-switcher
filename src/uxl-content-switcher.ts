@@ -1,6 +1,5 @@
 import {property} from "@uxland/uxl-polymer2-ts";
 import {html, LitElement} from '@polymer/lit-element/lit-element';
-import '@polymer/iron-flex-layout/iron-flex-layout'
 import {style as styleTemplate} from './uxl-content-switcher-styles.js';
 import {template as htmlTemplate} from './uxl-content-switcher-template.js';
 
@@ -20,11 +19,11 @@ export class UxlContentSwitcher extends LitElement {
     @property({notify: true})
     attrForSelected: string;
 
-    _render(props: UxlContentSwitcher) : any{
-        return html`${styleTemplate} ${htmlTemplate(props)}`;
+    render(){
+        return html`${styleTemplate} ${htmlTemplate()}`;
     }
 
-    _didRender(props: UxlContentSwitcher) : any{
+    updated(current, old) : any{
         this.select();
     }
 
@@ -33,23 +32,22 @@ export class UxlContentSwitcher extends LitElement {
     }
 
     selectIndex(){
-        return this.selected
-            ? this.attrForSelected
-                ? Array.from(this.items).findIndex(i => Array.from(i.attributes).findIndex(attr=>attr.name == this.attrForSelected && attr.value == this.selected) != -1)
-                : this.selected
-            : 0;
+        return this.selected ?
+            this.attrForSelected ? Array.from(this.items).findIndex(i => i[this.attrForSelected] === this.selected) : parseInt(this.selected) : -1;
     }
 
     select(){
-        if(this.items){
+        if(this.items.length > 0){
             let index = this.selectIndex();
-            let items = Array.from(this.items);
-            items.forEach(i=>i.classList.remove('selected'));
-            items[index].classList.add('selected');
-            // this.fadeInAnimation(items[index], 2000);
-            // this.slideDownAnimation(items[index], 1000);
-            this.slideLeftAnimation(items[index], 1000);
-            // this.stretchLeftAnimation(items[index], 1500);
+            if(index != -1){
+                let items = Array.from(this.items);
+                items.forEach(i=>i.classList.remove('selected'));
+                items[index].classList.add('selected');
+                // this.fadeInAnimation(items[index], 2000);
+                // this.slideDownAnimation(items[index], 1000);
+                this.slideLeftAnimation(items[index], 1000);
+                // this.stretchLeftAnimation(items[index], 1500);
+            }
         }
     }
 
@@ -107,20 +105,6 @@ export class UxlContentSwitcher extends LitElement {
             {duration: duration, fill: 'forwards', easing: 'ease-out'});
         return animation;
     }
-
-/*selectNext(){
-    if(!this.attrforselected)
-        return this.selected = (parseInt(this.selected) + 1).toString();
-    else
-        return this.selected = (Array.from(this.items).findIndex(i => i.attributes[0].name == this.attrforselected && i.attributes[0].value == this.selected) + 1).toString();
-}
-
-selectPrevious(){
-    if(!this.attrforselected)
-        return this.selected = (parseInt(this.selected) + -1).toString();
-    else
-        return this.selected = (Array.from(this.items).findIndex(i => i.attributes[0].name == this.attrforselected && i.attributes[0].value == this.selected) + -1).toString();
-}*/
 }
 
 window.customElements.define('uxl-content-switcher', UxlContentSwitcher);
