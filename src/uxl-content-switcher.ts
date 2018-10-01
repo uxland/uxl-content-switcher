@@ -3,6 +3,9 @@ import {html, LitElement} from '@polymer/lit-element/lit-element';
 import {style as styleTemplate} from './uxl-content-switcher-styles.js';
 import {template as htmlTemplate} from './uxl-content-switcher-template.js';
 
+const isSelected = (item: HTMLElement, attrForSelected: string, selection: string) => item[attrForSelected] === selection ||
+    Array.from(item.attributes).some(attr => attr.name === attrForSelected && attr.value === selection);
+
 /**
  * `uxl-content-switcher`
  * A content switcher with animations component
@@ -23,7 +26,7 @@ export class UxlContentSwitcher extends LitElement {
         return html`${styleTemplate} ${htmlTemplate()}`;
     }
 
-    updated(current, old) : any{
+    updated(props) : any{
         this.select();
     }
 
@@ -33,7 +36,7 @@ export class UxlContentSwitcher extends LitElement {
 
     selectIndex(){
         return this.selected ?
-            this.attrForSelected ? Array.from(this.items).findIndex(i => i[this.attrForSelected] === this.selected) : parseInt(this.selected) : -1;
+            this.attrForSelected ? Array.from(this.items).findIndex(i => isSelected(i, this.attrForSelected, this.selected)) : parseInt(this.selected) : -1;
     }
 
     select(){
@@ -43,9 +46,9 @@ export class UxlContentSwitcher extends LitElement {
                 let items = Array.from(this.items);
                 items.forEach(i=>i.classList.remove('selected'));
                 items[index].classList.add('selected');
-                // this.fadeInAnimation(items[index], 2000);
+                this.fadeInAnimation(items[index], 2000);
                 // this.slideDownAnimation(items[index], 1000);
-                this.slideLeftAnimation(items[index], 1000);
+                // this.slideLeftAnimation(items[index], 1000);
                 // this.stretchLeftAnimation(items[index], 1500);
             }
         }
