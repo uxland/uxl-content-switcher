@@ -27,17 +27,17 @@ export class UxlContentSwitcher extends LitElement {
 
     render(){
         return html`
-                    <style>
-                        :host{
-                            display: flex;
-                            flex: 1;
-                        }
-                        :host > ::slotted(:not(slot):not(.selected)) {
-                            display: none !important;
-                        }         
-                    </style> 
-                    <slot></slot>
-                `;
+            <style>
+                :host{
+                    display: flex;
+                    flex: 1;
+                }
+                :host > ::slotted(:not(slot):not(.selected)) {
+                    display: none !important;
+                }         
+            </style> 
+            <slot></slot>
+        `;
     }
 
     updated(props) : any{
