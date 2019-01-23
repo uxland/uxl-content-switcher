@@ -28,6 +28,8 @@
       font-size: 1rem;
     }
     div{
+      display: flex;
+      flex: 1;
       text-align: center;
       padding: 10px 40px;
       color: #fff;
@@ -44,6 +46,10 @@
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+  }
+
+  #test1, #test2{
+    flex-direction: column;
   }
 
   #div1, #div4{
@@ -65,7 +71,7 @@
   <template>
     <div id="test1">
       <h3>uxl-content-switcher demo without attrForSelected</h3>
-      <uxl-content-switcher id="pages1" selected="0">
+      <uxl-content-switcher id="pages1" selected="0" duration="3000">
         <div id="div1">I'm a view 1</div>
         <div id="div2">I'm a view 2</div>
         <div id="div3">I'm a view 3</div>

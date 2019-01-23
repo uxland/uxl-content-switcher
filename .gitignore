@@ -6,3 +6,5 @@ src/**/*.js.map
 test/**/*.js
 test/**/*.js.map
 mochawesome-report/
+allure-results/
+errorShots/

@@ -5,3 +5,6 @@ polymer.json
 tsconfig.json
 gulp/
 gulpfile.js
+demo/
+allure-results/
+errorShots/

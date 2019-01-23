@@ -18,10 +18,8 @@
     "url": "https://github.com/uxland/uxl-content-switcher/issues"
   },
   "dependencies": {
-    "@polymer/iron-flex-layout": "^3.0.0-pre.21",
-    "@polymer/lit-element": "^0.6.1",
-    "@polymer/polymer": "^3.0.0",
-    "@uxland/uxl-polymer2-ts": "^1.0.5"
+    "lit-element": "^2.0.0-rc.3",
+    "@polymer/polymer": "^3.1.0"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
@@ -42,7 +40,6 @@
     "gulp-bump": "^3.1.1",
     "gulp-run": "^1.7.1",
     "jsdom": "^11.12.0",
-    "lodash": "3.10.1",
     "mocha": "^5.2.0",
     "mochawesome": "^3.0.3",
     "mutation-observer": "^1.0.3",
@@ -57,7 +54,8 @@
     "semantic-release": "^15.9.15",
     "sinon": "^6.0.0",
     "travis-deploy-once": "^5.0.7",
-    "typescript": "^2.9.2",
+    "typescript": "^3.2.4",
+    "tslib": "^1.9.3",
     "wct-browser-legacy": "^1.0.0",
     "wdio-allure-reporter": "^0.7.0",
     "wdio-dot-reporter": "0.0.10",
