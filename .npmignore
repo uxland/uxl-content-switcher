@@ -1,10 +1,12 @@
-src/
 test/
 mochawesome-report/
 polymer.json
 tsconfig.json
-gulp/
-gulpfile.js
+node_modules/
+.idea/
 demo/
-allure-results/
-errorShots/
+wdio.conf.js
+webpack.config.js
+.travis.yml
+README.md
+src/

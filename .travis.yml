@@ -10,13 +10,11 @@ node_js: 10
 addons:
   chrome: stable
 before_script:
-  - npm i -g polymer-cli
+#- npm i -g polymer-cli
 script:
-  - npm run build
-  - xvfb-run npm run test:e2e
-  # - npm run test:unit
+#- npm run test:unit
 after_success:
-  - gulp dist
+  - npm run build
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
