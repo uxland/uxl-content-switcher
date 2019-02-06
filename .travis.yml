@@ -14,7 +14,7 @@ before_script:
 script:
 #- npm run test:unit
 after_success:
-  - npm run build
+  - npm run dist
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
