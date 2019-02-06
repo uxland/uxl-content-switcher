@@ -13,6 +13,7 @@ const isSelected = (item: HTMLElement, attrForSelected: string, selection: strin
  * @polymer
  * @demo demo/index.html
  */
+
 @customElement('uxl-content-switcher')
 export class UxlContentSwitcher extends LitElement {
 
