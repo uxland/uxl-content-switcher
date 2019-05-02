@@ -78,8 +78,10 @@ export class UxlContentSwitcher extends LitElement {
         return animations.fadeInAnimation(item, parseInt(this.duration));
       case "slideDown":
         return animations.slideDownAnimation(item, parseInt(this.duration));
-      case "slide":
+      case "slideLeft":
         return animations.slideLeftAnimation(item, parseInt(this.duration));
+      case "slideRight":
+        return animations.slideRightAnimation(item, parseInt(this.duration));
       case "stretch":
         return animations.stretchLeftAnimation(item, parseInt(this.duration));
       default:

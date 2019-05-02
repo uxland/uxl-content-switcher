@@ -26,7 +26,7 @@ $ polymer test
 
 `duration` : the animation duration in ms.
 
-`animation`: the animation type. You can choose under "slide", "fade" or "stretch";
+`animation`: the animation type. You can choose under "slideDown", "slideLeft", "slideRight", "fade" or "stretch";
 
 Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
 

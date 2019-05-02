@@ -44,6 +44,21 @@ export const slideLeftAnimation = (element, duration) => {
   return animation;
 };
 
+export const slideRightAnimation = (element, duration) => {
+  let animation = element.animate(
+    [
+      { transform: "translateX(-100%)", offset: 0.0 },
+      { transform: "translateX(-40%)", offset: 0.5 },
+      { transform: "translateX(-7%)", offset: 0.65 },
+      { transform: "translateX(-4%)", offset: 0.8 },
+      { transform: "translateX(-2%)", offset: 0.95 },
+      { transform: "translateX(-0%)", offset: 1.0 }
+    ],
+    { duration: duration, fill: "forwards", easing: "ease-in-out" }
+  );
+  return animation;
+};
+
 export const stretchLeftAnimation = (element, duration) => {
   let animation = element.animate(
     [
