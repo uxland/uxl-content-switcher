@@ -1,12 +1,10 @@
 test/
-mochawesome-report/
-polymer.json
 tsconfig.json
-node_modules/
-.idea/
+src/
 demo/
-wdio.conf.js
 webpack.config.js
 .travis.yml
-README.md
-src/
+.releaserc.json
+service-worker.js
+tsconfig.build.json
+.idea

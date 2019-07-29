@@ -1,10 +1,8 @@
-import { property, customElement } from "lit-element/lib/decorators";
-import { html, LitElement } from "lit-element/lit-element";
-import * as animations from "./animations";
+import { property, customElement, html, LitElement } from 'lit-element';
+import * as animations from './animations';
 
 const isSelected = (item: HTMLElement, attrForSelected: string, selection: string) =>
-  item[attrForSelected] === selection ||
-  Array.from(item.attributes).some(attr => attr.name === attrForSelected && attr.value === selection);
+  item[attrForSelected] === selection || Array.from(item.attributes).some(attr => attr.name === attrForSelected && attr.value === selection);
 
 /**
  * `uxl-content-switcher`
@@ -15,7 +13,7 @@ const isSelected = (item: HTMLElement, attrForSelected: string, selection: strin
  * @demo demo/index.html
  */
 
-@customElement("uxl-content-switcher")
+@customElement('uxl-content-switcher')
 export class UxlContentSwitcher extends LitElement {
   @property()
   selected: any;
@@ -24,10 +22,10 @@ export class UxlContentSwitcher extends LitElement {
   attrForSelected: string;
 
   @property()
-  duration: string = "1000";
+  duration: string = '1000';
 
   @property()
-  animation: string = "fade";
+  animation: string = 'fade';
 
   render() {
     return html`
@@ -65,8 +63,8 @@ export class UxlContentSwitcher extends LitElement {
       let index = this.selectIndex();
       if (index != -1) {
         let items = Array.from(this.items);
-        items.forEach(i => i.classList.remove("selected"));
-        items[index].classList.add("selected");
+        items.forEach(i => i.classList.remove('selected'));
+        items[index].classList.add('selected');
         this.getAnimation(items[index]);
       }
     }
@@ -74,15 +72,15 @@ export class UxlContentSwitcher extends LitElement {
 
   getAnimation(item) {
     switch (this.animation) {
-      case "fade":
+      case 'fade':
         return animations.fadeInAnimation(item, parseInt(this.duration));
-      case "slideDown":
+      case 'slideDown':
         return animations.slideDownAnimation(item, parseInt(this.duration));
-      case "slideLeft":
+      case 'slideLeft':
         return animations.slideLeftAnimation(item, parseInt(this.duration));
-      case "slideRight":
+      case 'slideRight':
         return animations.slideRightAnimation(item, parseInt(this.duration));
-      case "stretch":
+      case 'stretch':
         return animations.stretchLeftAnimation(item, parseInt(this.duration));
       default:
         return animations.fadeInAnimation(item, parseInt(this.duration));
