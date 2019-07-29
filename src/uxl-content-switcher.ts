@@ -53,7 +53,7 @@ export class UxlContentSwitcher extends LitElement {
   selectIndex() {
     return this.selected || this.selected == 0
       ? this.attrForSelected
-        ? Array.from(this.items).findIndex(item => isSelected(item, this.attrForSelected, this.selected))
+        ? Array.from(this.items).findIndex((item: any) => isSelected(item, this.attrForSelected, this.selected))
         : parseInt(this.selected)
       : -1;
   }
