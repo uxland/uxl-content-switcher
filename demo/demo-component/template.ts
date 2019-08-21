@@ -5,7 +5,7 @@ import { DemoComponent } from './demo-component';
 export const template = (props: DemoComponent) => html`
   <div id="test1">
     <h3>uxl-content-switcher demo without attrForSelected</h3>
-    <uxl-content-switcher id="pages1" selected="0" duration="500" animation="disabled">
+    <uxl-content-switcher id="pages1" selected="0" duration="500" animation="fade">
       <div id="div1">I'm a view 1</div>
       <div id="div2">I'm a view 2</div>
       <div id="div3">I'm a view 3</div>

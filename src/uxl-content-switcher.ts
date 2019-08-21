@@ -1,6 +1,7 @@
-import { property, customElement, html, LitElement } from 'lit-element';
-import * as animations from './animations';
-
+import { property, customElement, html, LitElement, css, unsafeCSS } from 'lit-element';
+// import * as animations from './animations';
+import { template } from './template';
+import styles from './styles.scss';
 const isSelected = (item: HTMLElement, attrForSelected: string, selection: string) =>
   item[attrForSelected] === selection || Array.from(item.attributes).some(attr => attr.name === attrForSelected && attr.value === selection);
 
@@ -15,6 +16,18 @@ const isSelected = (item: HTMLElement, attrForSelected: string, selection: strin
 
 @customElement('uxl-content-switcher')
 export class UxlContentSwitcher extends LitElement {
+  render() {
+    return html`
+      ${template()}
+    `;
+  }
+
+  static get styles() {
+    return css`
+      ${unsafeCSS(styles)}
+    `;
+  }
+
   @property()
   selected: any;
 
@@ -22,25 +35,7 @@ export class UxlContentSwitcher extends LitElement {
   attrForSelected: string;
 
   @property()
-  duration: string = '1000';
-
-  @property()
   animation: string = 'fade';
-
-  render() {
-    return html`
-      <style>
-        :host {
-          display: flex;
-          flex: 1;
-        }
-        :host > ::slotted(:not(slot):not(.selected)) {
-          display: none !important;
-        }
-      </style>
-      <slot></slot>
-    `;
-  }
 
   updated(props): any {
     this.select();
@@ -59,33 +54,36 @@ export class UxlContentSwitcher extends LitElement {
   }
 
   select() {
-    if (this.items.length > 0) {
+    if (this.items.length) {
       let index = this.selectIndex();
       if (index != -1) {
         let items = Array.from(this.items);
         items.forEach(i => i.classList.remove('selected'));
         items[index].classList.add('selected');
-        this.getAnimation(items[index]);
+        this.doAnimation(items[index]);
       }
     }
   }
 
-  getAnimation(item) {
+  doAnimation(item) {
     switch (this.animation) {
       case 'fade':
-        return animations.fadeInAnimation(item, parseInt(this.duration));
+        // return animations.fadeInAnimation(item, parseInt(this.duration));
+        return item && item.classList.add('fade-in');
       case 'slideDown':
-        return animations.slideDownAnimation(item, parseInt(this.duration));
+        // return animations.slideDownAnimation(item, parseInt(this.duration));
+        return item && item.classList.add('slide-down');
       case 'slideLeft':
-        return animations.slideLeftAnimation(item, parseInt(this.duration));
+        // return animations.slideLeftAnimation(item, parseInt(this.duration));
+        return item && item.classList.add('slide-left');
       case 'slideRight':
-        return animations.slideRightAnimation(item, parseInt(this.duration));
-      case 'stretch':
-        return animations.stretchLeftAnimation(item, parseInt(this.duration));
+        // return animations.slideRightAnimation(item, parseInt(this.duration));
+        return item && item.classList.add('slide-right');
       case 'disabled':
         return;
       default:
-        return animations.fadeInAnimation(item, parseInt(this.duration));
+        return item && item.classList.add('fade-in');
+      // return animations.fadeInAnimation(item, parseInt(this.duration));
     }
   }
 }
