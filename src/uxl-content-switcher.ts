@@ -1,32 +1,35 @@
-import { property, customElement, html, LitElement, css, unsafeCSS } from 'lit-element';
+import {html, LitElement, css} from 'lit';
+import {property, customElement} from 'lit/decorators.js';
 // import * as animations from './animations';
-import { template } from './template';
-import styles from './styles.scss';
 const isSelected = (item: HTMLElement, attrForSelected: string, selection: string) =>
-  item[attrForSelected] === selection || Array.from(item.attributes).some(attr => attr.name === attrForSelected && attr.value === selection);
+  item[attrForSelected] === selection ||
+  Array.from(item.attributes).some(
+    attr => attr.name === attrForSelected && attr.value === selection
+  );
 
 /**
  * `uxl-content-switcher`
  * A content switcher with animations component
  *
  * @customElement
- * @polymer
  * @demo demo/index.html
  */
 
 @customElement('uxl-content-switcher')
 export class UxlContentSwitcher extends LitElement {
   render() {
-    return html`
-      ${template()}
-    `;
+    return html`<slot></slot>`;
   }
 
-  static get styles() {
-    return css`
-      ${unsafeCSS(styles)}
-    `;
-  }
+  static styles = css`
+    :host {
+      display: flex;
+      flex: 1;
+    }
+    :host > ::slotted(:not(slot):not(.selected)) {
+      display: none !important;
+    }
+  `;
 
   @property()
   selected: any;
@@ -48,7 +51,9 @@ export class UxlContentSwitcher extends LitElement {
   selectIndex() {
     return this.selected || this.selected == 0
       ? this.attrForSelected
-        ? Array.from(this.items).findIndex((item: any) => isSelected(item, this.attrForSelected, this.selected))
+        ? Array.from(this.items).findIndex((item: any) =>
+            isSelected(item, this.attrForSelected, this.selected)
+          )
         : parseInt(this.selected)
       : -1;
   }

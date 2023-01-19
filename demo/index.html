@@ -4,23 +4,9 @@
     <meta charset="UTF-8" />
     <title>UXL Content Switcher</title>
     <script src="/demo/settings.js"></script>
-    <script>
-      document.addEventListener(
-        "WebComponentsReady",
-        function componentsReady() {
-          document.removeEventListener("WebComponentsReady", componentsReady, false);
-          var script = document.createElement("script");
-          script.async = true;
-          script.src = '<%= htmlWebpackPlugin.files.chunks["main"].entry %>';
-          var refScript = document.body.getElementsByTagName("script")[0];
-          refScript.parentNode.insertBefore(script, refScript);
-        },
-        false
-      );
-    </script>
   </head>
 
   <body>
-    <script defer src="<%= htmlWebpackPlugin.options.paths.webcomponents %>"></script>
+    <script defer src='<%= htmlWebpackPlugin.files.chunks["main"].entry %>'></script>
   </body>
 </html>

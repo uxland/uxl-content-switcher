@@ -1,7 +1,0 @@
-:host {
-  display: flex;
-  flex: 1;
-}
-:host > ::slotted(:not(slot):not(.selected)) {
-  display: none !important;
-}

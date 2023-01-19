@@ -19,7 +19,7 @@
     "url": "https://github.com/uxland/uxl-content-switcher/issues"
   },
   "dependencies": {
-    "lit-element": "^2.2.1"
+    "lit": "^2.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
