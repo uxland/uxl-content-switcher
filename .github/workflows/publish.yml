@@ -24,7 +24,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 11.x
-          cache: yarn
       - name: Install and test
         run: yarn install
       - name: Build
